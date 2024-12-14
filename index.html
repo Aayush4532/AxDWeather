@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <!--NAVBAR -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./cloudy.png" alt="Weather App Logo" />
+        <span>Weather</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">AxD Weather</a></li>
+      </ul>
+      <div class="search-bar">
+        <input type="text" placeholder="Enter city..." id="searchInput" />
+        <button id="searchBtn">Search</button>
+      </div>
+    </nav>
+
+    <div id="weather-data" class="weather-container">
+      <div class="weather-header">
+        <h2 id="city-name">City Name</h2>
+        <h1 id="temperature">24°C</h1>
+      </div>
+
+      <div class="weather-details">
+        <p>
+          <strong>Condition:</strong> <span id="condition">Partly Cloudy</span>
+        </p>
+        <p><strong>Wind Speed:</strong> <span id="wind-speed">15 km/h</span></p>
+        <p><strong>Humidity:</strong> <span id="humidity">60%</span></p>
+      </div>
+    </div>
+  </body>
+</html>
