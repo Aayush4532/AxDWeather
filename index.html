@@ -17,24 +17,25 @@
         <li><a href="#">AxD Weather</a></li>
       </ul>
       <div class="search-bar">
-        <input type="text" placeholder="Enter city..." id="searchInput" />
-        <button id="searchBtn">Search</button>
+        <input type="text" placeholder="Enter city..." id="searchInput" value="" />
+        <button id="submit">Search</button>
       </div>
     </nav>
 
     <div id="weather-data" class="weather-container">
       <div class="weather-header">
         <h2 id="city-name">City Name</h2>
-        <h1 id="temperature">24°C</h1>
+        <h1 id="temperature"><span id="temp"></span>°F</h1>
       </div>
 
       <div class="weather-details">
         <p>
-          <strong>Condition:</strong> <span id="condition">Partly Cloudy</span>
+          <strong>Condition:</strong> <span id="condition"></span>
         </p>
-        <p><strong>Wind Speed:</strong> <span id="wind-speed">15 km/h</span></p>
-        <p><strong>Humidity:</strong> <span id="humidity">60%</span></p>
+        <p><strong>Wind Speed:</strong> <span id="wind-speed"></span>km/h</p>
+        <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
